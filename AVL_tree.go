@@ -6,13 +6,35 @@ import (
 
 func main(){
 
+	tree := &AVLNode{key: 100, Value: 400}
+	fmt.Println(tree)
+	//tree.Insert(200)
+	//tree.Insert(300)
+	//fmt.Println(tree)
+
+	tree.add(110, 400)
+	tree.add(96, 300)
+	tree.add(19, 400)
+	tree.add(76, 200)
+	tree.add(150, 700)
+	tree.add(310, 500)
+	tree.add(7, 400)
+	tree.add(24, 390)
+	tree.add(88, 410)
+	tree.add(276, 440)
+
+
+
+	fmt.Println(tree)
+
+	fmt.Println(tree.search(76))
+
 	
+
 }
 
-
-
-
-
+	
+}
 
 
 
